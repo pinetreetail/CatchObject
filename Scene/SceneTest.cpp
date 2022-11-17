@@ -5,6 +5,12 @@
 
 namespace
 {
+	constexpr int kObjectNum = 4;
+}
+
+SceneTest::SceneTest()	:
+	m_circle(kObjectNum)
+{
 }
 
 void SceneTest::init()
@@ -31,6 +37,13 @@ void SceneTest::end()
 
 SceneBase* SceneTest::update()
 {
+	for (int i = 0; i < m_circle.size() - 1; i--)
+	{
+
+	}
+
+
+
 	for (auto& obj : m_circle)
 	{
 		obj.update();

@@ -23,8 +23,17 @@ public:
 	// •\¦F‚Ìİ’è
 	void setColor(int color) { m_color = color; }
 
+
+	bool isCatch() const { return m_isCatch; }
+
+	bool isCatchEnable(Vec2 pos);
+
 private:
 	SceneTest* m_pSceneTest;
 	// •\¦î•ñ
 	int		m_color;
+
+	bool m_isCatch;
+	Vec2 m_catchOffset;
+
 };

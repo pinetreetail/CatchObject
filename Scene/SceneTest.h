@@ -6,9 +6,7 @@
 class SceneTest : public SceneBase
 {
 public:
-	SceneTest() 
-	{
-	}
+	SceneTest();
 	virtual ~SceneTest() {}
 
 
@@ -18,8 +16,6 @@ public:
 	virtual SceneBase* update() override;
 	virtual void draw() override;
 
-private:
-	static const int kObjectNum = 4;
 private:
 	ObjectCircle	m_circle[kObjectNum];
 };
